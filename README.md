@@ -150,8 +150,8 @@ From `signup.sql`, table `signup` contains:
 
 - This is a demo project; many elements are static placeholders.
 - Authentication logic is basic and should be improved for production.
-- Passwords are stored in plain text in current implementation.
-- Prepared statements, input validation, and password hashing are recommended for real-world use.
+- Passwords are currently stored in plain text, which is a critical security risk.
+- Do not deploy this project to production without adding password hashing (for example, using PHP `password_hash()`/`password_verify()`), prepared statements, and stronger input validation.
 
 ---
 
