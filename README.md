@@ -93,7 +93,7 @@ Create a database and import `signup.sql`.
 1. Open phpMyAdmin
 2. Create a database
 3. Open the database
-4. Import `/tmp/workspace/khairullah770/khairullahWAD-Furniture-demo-and-presentation/signup.sql`
+4. Import `signup.sql` from the project root
 
 #### Option B: MySQL CLI
 ```bash
@@ -109,16 +109,14 @@ mysql -u root -p signup < signup.sql
 $dbname = "signup";
 ```
 
-If your imported DB uses a different name, update this value in:
-
-- `/tmp/workspace/khairullah770/khairullahWAD-Furniture-demo-and-presentation/connect.php`
+If your imported DB uses a different name, update this value in `connect.php`.
 
 ### 4) Run the project
 
 Open in browser:
 
 ```text
-http://localhost/khairullahWAD-Furniture-demo-and-presentation/index.php
+http://localhost/[project-folder]/index.php
 ```
 
 ---
