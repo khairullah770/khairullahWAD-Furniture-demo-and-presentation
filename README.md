@@ -152,6 +152,8 @@ From `signup.sql`, table `signup` contains:
 - Authentication logic is basic and should be improved for production.
 - Passwords are currently stored in plain text, which is a critical security risk.
 - Do not deploy this project to production without adding password hashing (for example, using PHP `password_hash()`/`password_verify()`), prepared statements, and stronger input validation.
+- The `c_password` (confirm password) field should only be used for form-time validation and should not be stored in production databases.
+- Using `email` as a primary key works for a demo, but production systems usually use a dedicated numeric/UUID user ID as the primary key.
 
 ---
 
